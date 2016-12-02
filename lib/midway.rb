@@ -1,6 +1,16 @@
+require 'yaml'
+
 require "midway/version"
 require 'midway/cli'
+require 'midway/ssh'
 
 module Midway
-  # Your code goes here...
+
+  def self.config
+    @config ||= YAML.load_file(config_path)
+  end
+
+  def self.config_path
+    File.expand_path('~/.midway.yml')
+  end
 end

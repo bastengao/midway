@@ -32,4 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_dependency "droplet_kit"
   spec.add_dependency "thor"
+  spec.add_dependency "net-ssh"
+  spec.add_dependency "qiniu"
 end

@@ -1,0 +1,25 @@
+# 0: use existing server
+# 1: create digitalocean. Drop server after use.
+mode: 0
+
+# 1.
+download_at:
+# 2.
+fetch_from:
+
+# server ssh option
+server:
+  host: 127.0.0.1
+  port: 22
+  username: ubuntu
+  password: optional
+
+qiniu:
+  qshell_home: "~/.midway/qshell"
+  ak: access key
+  sk: secret key
+  bucket: bucket
+
+# Create server if need
+digitalocean:
+  access_token: test

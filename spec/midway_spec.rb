@@ -1,11 +1,11 @@
 require 'spec_helper'
 
 describe Midway do
-  it 'has a version number' do
-    expect(Midway::VERSION).not_to be nil
+  it 'config_path' do
+    expect(Midway.config_path).not_to be_nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'config' do
+    expect(Midway.config).not_to be_nil
   end
 end
